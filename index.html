@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jackson — Travels in Europe</title>
+  <meta name="description" content="Following Jackson's journey across Europe — maps, plans, and the in-between.">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <!-- Site styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+  <site-header>
+    <p class="header-name">Jackson's <span>Travels </span> </p>
+    <site-nav aria-label="Page sections">
+      <a href="#map-section">Map</a>
+      <a href="#calendar-section">Calendar</a>
+      <a href="#contact-section">Contact</a>
+    </site-nav>
+  </site-header>
+
+  <main>
+
+    <!-- ═══════════════════════════ HERO ════════════════════════════ -->
+    <hero-section>
+      <p class="hero-eyebrow">A travel journal</p>
+      <h1>Exploring<br><em>Everywhere,</em><br>one city at a time.</h1>
+      <p class="hero-sub">
+        Marking the places I've been, the things I've seen, and all the plans still ahead.
+      </p>
+      <div class="hero-stats">
+        <stat-item>
+          <div class="stat-number" id="stat-countries">—</div>
+          <div class="stat-label">Countries</div>
+        </stat-item>
+        <stat-item>
+          <div class="stat-number" id="stat-cities">—</div>
+          <div class="stat-label">Cities visited</div>
+        </stat-item>
+      </div>
+    </hero-section>
+
+    <!-- ═══════════════════════════ MAP ═════════════════════════════ -->
+    <page-section id="map-section">
+      <header class="section-header">
+        <p class="label">Where I've been</p>
+        <h2>The Map</h2>
+        <div class="section-rule" role="presentation"></div>
+      </header>
+
+      <map-container>
+        <div id="europe-map" role="img" aria-label="Interactive map of Jackson's European travels"></div>
+        <div class="map-legend" aria-label="Map legend">
+          <div class="legend-item">
+            <span class="legend-dot visited" aria-hidden="true"></span>
+            Visited
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot planned" aria-hidden="true"></span>
+            Planned
+          </div>
+        </div>
+      </map-container>
+    </page-section>
+
+    <!-- ════════════════════════ CALENDAR ═══════════════════════════ -->
+    <page-section id="calendar-section">
+      <header class="section-header">
+        <p class="label">What's ahead</p>
+        <h2>Calendar</h2>
+        <div class="section-rule" role="presentation"></div>
+      </header>
+
+      <calendar-widget>
+
+        <!-- Mini calendar -->
+        <calendar-grid>
+          <div class="cal-nav">
+            <button id="cal-prev" aria-label="Previous month">&#8249;</button>
+            <span class="cal-nav-month" id="cal-month-label">Loading…</span>
+            <button id="cal-next" aria-label="Next month">&#8250;</button>
+          </div>
+          <div class="cal-weekdays" role="row">
+            <span>Su</span><span>Mo</span><span>Tu</span>
+            <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+          </div>
+          <div class="cal-days" id="cal-days-grid" role="grid" aria-label="Calendar days"></div>
+        </calendar-grid>
+
+        <!-- Events for selected day + upcoming strip -->
+        <events-panel id="events-panel">
+          <h3 class="events-date-heading"><span></span></h3>
+          <div class="events-list"></div>
+
+          <header class="upcoming-label">
+            <p class="label">Upcoming</p>
+          </header>
+          <upcoming-list id="upcoming-list"></upcoming-list>
+        </events-panel>
+
+      </calendar-widget>
+    </page-section>
+
+    <!-- ════════════════════════ CONTACT ════════════════════════════ -->
+    <page-section id="contact-section">
+      <header class="section-header">
+        <p class="label">Say hello</p>
+        <h2>Contact</h2>
+        <div class="section-rule" role="presentation"></div>
+      </header>
+
+      <contact-content>
+        <p class="contact-text">
+          Following along on the journey, or just want to get in touch?
+          I'd love to hear from you — whether it's travel tips, questions,
+          or just to say hi from wherever you are in the world.
+        </p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:hello@jackson.travel">
+            <span class="contact-link-icon">✉</span>
+            hello@jackson.travel
+          </a>
+          <a class="contact-link" href="https://instagram.com/" target="_blank" rel="noopener">
+            <span class="contact-link-icon">◈</span>
+            Instagram
+          </a>
+          <a class="contact-link" href="https://twitter.com/" target="_blank" rel="noopener">
+            <span class="contact-link-icon">◇</span>
+            Twitter / X
+          </a>
+        </div>
+      </contact-content>
+    </page-section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ══════════════════════════ -->
+  <site-footer>
+    <p class="footer-copy">&copy; <span id="footer-year"></span> Jackson — All rights reserved</p>
+    <p class="footer-copy label">Built with curiosity &amp; caffeine</p>
+  </site-footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Site script -->
+  <script src="main.js"></script>
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

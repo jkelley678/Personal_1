@@ -1,0 +1,33 @@
+{
+  "visited": [
+    {
+      "id": 1,
+      "city": "Stockholm",
+      "country": "Sweden",
+      "lat": 59.3293,
+      "lng": 18.0686,
+      "date": "2025-01-12",
+      "note": "Data Mining Class for Three Weeks"
+    }
+  ],
+  "planned": [
+    {
+      "id": 2,
+      "city": "Desolation Sound",
+      "country": "Canada",
+      "lat": 50.0000,
+      "lng": -124.8750,
+      "date": "2026-07-10",
+      "note": "Tranquil waters with a lot of bees"
+    },
+    {
+      "id": 3,
+      "city": "TBD",
+      "country": "Morocco",
+      "lat": 31.7917,
+      "lng": -7.0926,
+      "date": "2027-01-05",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "date": "2026-06-08",
+      "title": "Flight to Prague",
+      "description": "Depart ARN 09:40 → PRG 11:10. Terminal 5.",
+      "type": "travel"
+    },
+    {
+      "id": 2,
+      "date": "2026-06-08",
+      "title": "Check-in: Hotel Josef",
+      "description": "Rybná 20, Prague 1. Check-in after 15:00.",
+      "type": "accommodation"
+    },
+    {
+      "id": 3,
+      "date": "2026-06-09",
+      "title": "Old Town Square & Astronomical Clock",
+      "description": "Morning walk through Staré Město. Watch the clock strike at noon.",
+      "type": "activity"
+    },
+    {
+      "id": 4,
+      "date": "2026-06-10",
+      "title": "Prague Castle",
+      "description": "Full morning at Hradčany. Book St. Vitus Cathedral tickets in advance.",
+      "type": "activity"
+    },
+    {
+      "id": 5,
+      "date": "2026-06-12",
+      "title": "Train to Vienna",
+      "description": "RegioJet 14:22 Prague hl.n → Wien Hbf 17:05.",
+      "type": "travel"
+    },
+    {
+      "id": 6,
+      "date": "2026-06-13",
+      "title": "Kunsthistorisches Museum",
+      "description": "Book morning slot. Vermeer and Bruegel collection.",
+      "type": "activity"
+    },
+    {
+      "id": 7,
+      "date": "2026-06-15",
+      "title": "Flight home from VIE",
+      "description": "Depart 18:50 → ARN 21:30. Check in online.",
+      "type": "travel"
+    },
+    {
+      "id": 8,
+      "date": "2026-09-05",
+      "title": "Fly to Lisbon",
+      "description": "Depart ARN 07:15 → LIS 11:40.",
+      "type": "travel"
+    },
+    {
+      "id": 9,
+      "date": "2026-09-06",
+      "title": "Alfama & São Jorge Castle",
+      "description": "Explore the oldest district in Lisbon. Find a fado restaurant for dinner.",
+      "type": "activity"
+    }
+  ]
+}
