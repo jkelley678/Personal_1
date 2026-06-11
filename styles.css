@@ -325,7 +325,6 @@ map-container {
 .legend-dot.planned  { background: var(--sage); border: 2px dashed #8ab885; background: transparent; }
 
 /* ── Calendar Section ──────────────────────────── */
-#calendar-section {}
 
 calendar-widget {
   display: grid;
@@ -657,4 +656,15 @@ site-footer {
   site-nav { gap: 0.8rem; }
   site-nav a { font-size: 0.62rem; letter-spacing: 0.1em; }
   .header-name { font-size: 1.1rem; }
+}
+
+.noscript-msg {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  padding: 1.5rem;
+  border: 1px dashed var(--border);
+  border-radius: 2px;
+  text-align: center;
 }
